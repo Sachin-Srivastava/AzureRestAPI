@@ -1,0 +1,14 @@
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\AzureConnection.deps.json
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\AzureConnection.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.csprojAssemblyReference.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.csproj.CoreCompileInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.AssemblyInfoInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.AssemblyInfo.cs
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\Common.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\AzureDTO.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\AzureDTO.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.csproj.CopyComplete
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\bin\Debug\netstandard2.0\AzureConnection.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureConnection\obj\Debug\netstandard2.0\AzureConnection.pdb

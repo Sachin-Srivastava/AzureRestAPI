@@ -1,0 +1,16 @@
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureConnection.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureDTO.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\Common.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.csprojAssemblyReference.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.csproj.CoreCompileInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.AssemblyInfoInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.AssemblyInfo.cs
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureService.deps.json
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureService.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureService.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureConnection.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\AzureDTO.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.csproj.CopyComplete
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureService\obj\Debug\netstandard2.0\AzureService.pdb

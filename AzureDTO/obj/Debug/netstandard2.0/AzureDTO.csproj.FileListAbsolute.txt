@@ -1,0 +1,8 @@
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\obj\Debug\netstandard2.0\AzureDTO.csproj.CoreCompileInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\obj\Debug\netstandard2.0\AzureDTO.AssemblyInfoInputs.cache
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\obj\Debug\netstandard2.0\AzureDTO.AssemblyInfo.cs
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\bin\Debug\netstandard2.0\AzureDTO.deps.json
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\bin\Debug\netstandard2.0\AzureDTO.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\bin\Debug\netstandard2.0\AzureDTO.pdb
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\obj\Debug\netstandard2.0\AzureDTO.dll
+C:\Users\ssrivastava\source\repos\AzureRestAPI\AzureDTO\obj\Debug\netstandard2.0\AzureDTO.pdb

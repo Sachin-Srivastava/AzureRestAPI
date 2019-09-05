@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+        "projectName": "AzureConnection",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+        "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ssrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+              },
+              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "projectName": "AzureDTO",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ssrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj",
+        "projectName": "AzureService",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj",
+        "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ssrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj"
+              },
+              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+              },
+              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ssrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
