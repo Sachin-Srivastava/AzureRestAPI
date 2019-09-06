@@ -1,3 +1,4 @@
+using System.Net.Http;
 using System.Threading.Tasks;
 using AzureRestAPI.AzureConnection;
 using AzureRestAPI.AzureDTO;
@@ -22,7 +23,8 @@ namespace AzureRestAPI.AzureService
         public async Task<StorageAccountList> GetStorageAccounts()
         {
             var content = await _azureClient.AzureGet($"{_resourceUrl}/subscriptions/{_config.SubscriptionId}/providers/Microsoft.Storage/storageAccounts?api-version=2019-04-01", _resourceUrl);
-            return JsonConvert.DeserializeObject<StorageAccountList>(content);
+            return await content.ReadAsAsync<StorageAccountList>();
+            //return JsonConvert.DeserializeObject<StorageAccountList>(content);
         }
     }
 }

@@ -15,14 +15,14 @@ namespace AzureRestAPI.AzureConnection
             _client = httpClientFactory.CreateClient();
             _azureAuthentication = azureAuthentication;
         }
-        public async Task<string> AzureGet(string url, string resourceUrl)
+        public async Task<HttpContent> AzureGet(string url, string resourceUrl)
         {
             var token = await _azureAuthentication.GetTokenAsync(resourceUrl);
             using (var requestMessage = new HttpRequestMessage(HttpMethod.Get, url))
             {
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 var response = await _client.SendAsync(requestMessage);
-                return await response.Content.ReadAsStringAsync();
+                return response.Content;
             }            
         }
         
