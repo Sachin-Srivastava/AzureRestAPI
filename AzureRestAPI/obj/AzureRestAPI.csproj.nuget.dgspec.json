@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj": {}
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
         "projectName": "AzureConnection",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
         "projectName": "AzureDTO",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -135,14 +135,14 @@
         }
       }
     },
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj",
         "projectName": "AzureRestAPI",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureRestAPI\\AzureRestAPI.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureRestAPI\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureRestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -161,17 +161,17 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\AzureService.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\AzureService.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj"
               }
             }
           }
@@ -211,14 +211,14 @@
         }
       }
     },
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\AzureService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\AzureService.csproj",
         "projectName": "AzureService",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\AzureService.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\AzureService.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureService\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -237,14 +237,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
               },
-              "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+              "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj"
               }
             }
           }
@@ -258,6 +258,18 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.Azure.DocumentDB.Core": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -277,14 +289,14 @@
         }
       }
     },
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

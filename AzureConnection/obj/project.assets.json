@@ -972,7 +972,7 @@
   },
   "libraries": {
     "Microsoft.Extensions.Configuration/2.2.0": {
-      "sha512": "0MtJgCZ5tIw7LoxOlXlifwVTwfMd4YdMJ9+DVZyX/fqqXO9zseZ8hH2WxbJzDbBDp45nA8rwHlL4JH/6Z98B4w==",
+      "sha512": "nOP8R1mVb/6mZtm2qgAJXn/LFm/2kMjHDAg/QJLFG6CuWYJtaD3p1BwQhufBVvRzL9ceJ/xF0SQ0qsI2GkDQAA==",
       "type": "package",
       "path": "microsoft.extensions.configuration/2.2.0",
       "files": [
@@ -985,7 +985,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
-      "sha512": "M6u4cMWXxPtqyJJ03oezyqTORmSgTPpa2gZRKkEGCXXHhyGnM1cHjPTzq5sevYS1VJEMb2TZj60mAc+hDoPPcQ==",
+      "sha512": "65MrmXCziWaQFrI0UHkQbesrX5wTwf9XPjY5yFm/VkgJKFJ5gqvXRoXjIZcf2wLi5ZlwGz/oMYfyURVCWbM5iw==",
       "type": "package",
       "path": "microsoft.extensions.configuration.abstractions/2.2.0",
       "files": [
@@ -998,7 +998,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Binder/2.2.0": {
-      "sha512": "6ANwTuQZqIIt0guKAdS9Mn6c+PfhOBpqRm7FslUJqtG000uo0Cd3pAndk92RQq0ygDFRub/ftiRy8DukWXqNzQ==",
+      "sha512": "vJ9xvOZCnUAIHcGC3SU35r3HKmHTVIeHzo6u/qzlHAqD8m6xv92MLin4oJntTvkpKxVX3vI1GFFkIQtU3AdlsQ==",
       "type": "package",
       "path": "microsoft.extensions.configuration.binder/2.2.0",
       "files": [
@@ -1076,7 +1076,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.2.0": {
-      "sha512": "vpH+o7f8obVx65PiEtBXxTwL5RosK60fNIMy/y8WGE4/r4IvAqQGukOzMhxsp//Accvd7kmukyQTVkqVYdaDyA==",
+      "sha512": "azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.2.0",
       "files": [
@@ -1473,7 +1473,7 @@
       ]
     },
     "System.Buffers/4.4.0": {
-      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
       "type": "package",
       "path": "system.buffers/4.4.0",
       "files": [
@@ -2412,7 +2412,7 @@
       ]
     },
     "System.Numerics.Vectors/4.4.0": {
-      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
       "type": "package",
       "path": "system.numerics.vectors/4.4.0",
       "files": [
@@ -3167,7 +3167,7 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
+      "sha512": "vOYy7Jv9KsG3ld2hLt0GoERd82SZi4BelrbXLwI9yFBYX7kpbvUCWYo4eyevk47cuJXZ9ZLVAryANcc7iY71aA==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -3497,11 +3497,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+      "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
       "projectName": "AzureConnection",
-      "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
+      "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\AzureConnection.csproj",
       "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureConnection\\obj\\",
+      "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureConnection\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3520,11 +3520,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
-              "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
+            "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+              "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj"
             },
-            "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\Common\\Common.csproj"
+            "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\Common\\Common.csproj"
             }
           }
         }

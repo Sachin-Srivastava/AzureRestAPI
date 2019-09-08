@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AzureRestAPI.AzureConnection;
+using AzureRestAPI.AzureDTO;
 using AzureRestAPI.AzureService;
 using AzureRestAPI.Common;
 using Microsoft.AspNetCore.Builder;
@@ -18,12 +19,18 @@ namespace AzureRestAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        private readonly IHostingEnvironment _env;
+        private readonly IConfiguration _config;
+        private readonly ILoggerFactory _loggerFactory;
 
-        public IConfiguration Configuration { get; }
+        public Startup(IHostingEnvironment env, IConfiguration config,
+        ILoggerFactory loggerFactory)
+        {
+            _env = env;
+            _config = config;
+            _loggerFactory = loggerFactory;
+        }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -34,13 +41,10 @@ namespace AzureRestAPI
                 .AddSingleton<IStorageAccountService, StorageAccountService>()
                 .AddSingleton<IAccountQueuesService, AccountQueuesService>()
                 .AddSingleton<IAzureClient, AzureClient>()
-                .AddSingleton<SharedResources>()
-                .AddLogging(loggingBuilder =>
-                {
-                    loggingBuilder.AddConfiguration(Configuration.GetSection("Logging"));
-                    loggingBuilder.AddConsole();
-                })
-                .Configure<AppSettings>(Configuration)
+                .AddSingleton<ITableService, TableService>()
+                .AddSingleton<IDocumentDBRepository<Item>, DocumentDBRepository<Item>>()
+                .AddSingleton<SharedResources>()                       
+                .Configure<AppSettings>(_config)
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

@@ -24,8 +24,7 @@ namespace AzureRestAPI.AzureService
         }
         public async Task<string> GetEntities()
         {
-            return await _azureClient.AzureGetResource("https://ssactivateazure.table.core.windows.net/mytable", "https://ssactivateazure.table.core.windows.net");            
-            
+            return await _azureClient.AzureGetResource("https://ssactivateazure.table.core.windows.net/mytable", "https://management.azure.com/");        
         }
     }
 }

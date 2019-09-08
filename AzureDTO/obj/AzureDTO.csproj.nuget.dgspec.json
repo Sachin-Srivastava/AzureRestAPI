@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {}
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
+    "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
         "projectName": "AzureDTO",
-        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+        "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
         "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\obj\\",
+        "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

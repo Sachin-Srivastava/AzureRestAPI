@@ -225,11 +225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+      "projectUniqueName": "C:\\Users\\ssrivastava\\Source\\Repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
       "projectName": "AzureDTO",
-      "projectPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
+      "projectPath": "C:\\Users\\ssrivastava\\Source\\Repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\AzureDTO.csproj",
       "packagesPath": "C:\\Users\\ssrivastava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ssrivastava\\source\\repos\\AzureRestAPI\\AzureDTO\\obj\\",
+      "outputPath": "C:\\Users\\ssrivastava\\Source\\Repos\\Sachin-Srivastava\\AzureRestAPI\\AzureDTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
