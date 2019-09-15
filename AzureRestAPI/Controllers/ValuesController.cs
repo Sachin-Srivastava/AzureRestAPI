@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AzureRestAPI.AzureDTO;
 using AzureRestAPI.AzureService;
+using AzureRestAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -16,12 +17,12 @@ namespace AzureRestAPI.Controllers
         private readonly IAccountQueuesService _accountQueueService;
         private readonly IStorageAccountService _storageAccountService;
         private readonly ITableService _tableService;
-        private readonly IDocumentDBRepository<Item> _documentDBRepository;
+        private readonly IDocumentDBRepository<Book> _documentDBRepository;
         private readonly ILogger _logger;
 
         public ValuesController(IAccountQueuesService accountQueueService,
             IStorageAccountService storageAccountService, ITableService tableService,
-            IDocumentDBRepository<Item> documentDBRepository, ILogger<ValuesController> logger)
+            IDocumentDBRepository<Book> documentDBRepository, ILogger<ValuesController> logger)
         {
             _accountQueueService = accountQueueService;
             _storageAccountService = storageAccountService;
@@ -47,14 +48,27 @@ namespace AzureRestAPI.Controllers
         {
             return await _storageAccountService.GetStorageAccounts();            
         }
-
-        [Route("entities")]
-        [HttpGet]
-        public async Task<ActionResult<List<Item>>> GetEntitiesAsync()
+        
+        [HttpGet("entities")]
+        public async Task<ActionResult<List<Book>>> GetEntitiesAsync()
         {
-            var x = await _documentDBRepository.GetItemsAsync(d => !d.Completed);
-            return x.ToList();
+            var x = await _documentDBRepository.GetItemsAsync(d => true);
+            return Ok(x.ToList());
             //return x.ToString();
+        }
+
+        //[HttpPost]
+        [HttpPost("entities")]
+        //[ValidateAntiForgeryToken]
+        public async Task<ActionResult<Book>> CreateAsync(Book item)
+        {
+            if (ModelState.IsValid)
+            {
+                await _documentDBRepository.CreateItemAsync(item);
+                //return RedirectToAction("Index");
+            }
+
+            return Ok(item);
         }
     }
 }

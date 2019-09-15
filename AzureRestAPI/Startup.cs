@@ -6,10 +6,13 @@ using AzureRestAPI.AzureConnection;
 using AzureRestAPI.AzureDTO;
 using AzureRestAPI.AzureService;
 using AzureRestAPI.Common;
+using AzureRestAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Documents;
+using Microsoft.Azure.Documents.Client;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -22,6 +25,8 @@ namespace AzureRestAPI
         private readonly IHostingEnvironment _env;
         private readonly IConfiguration _config;
         private readonly ILoggerFactory _loggerFactory;
+        private readonly string Endpoint = "https://ss-activateazure.documents.azure.com:443/";
+        private readonly string Key = "nXctaHKDZwgabHbLTO5rVZQHQv4LZuy3mv6gNY8AggHTb8jyYTTiuKkDeM5yQD7ZqHZoqRHVcl2mOTloBODIsw==";
 
         public Startup(IHostingEnvironment env, IConfiguration config,
         ILoggerFactory loggerFactory)
@@ -42,7 +47,13 @@ namespace AzureRestAPI
                 .AddSingleton<IAccountQueuesService, AccountQueuesService>()
                 .AddSingleton<IAzureClient, AzureClient>()
                 .AddSingleton<ITableService, TableService>()
-                .AddSingleton<IDocumentDBRepository<Item>, DocumentDBRepository<Item>>()
+                .AddSingleton<IDocumentDBRepository<Book>, DocumentDBRepository<Book>>(serviceProvider =>
+                    {
+                        var documentClient = new DocumentClient(new Uri(Endpoint), Key);
+                        return new DocumentDBRepository<Book>(documentClient);
+                    }
+                )
+                .AddSingleton<IDocumentClient, DocumentClient>()
                 .AddSingleton<SharedResources>()                       
                 .Configure<AppSettings>(_config)
                 .AddMvc()

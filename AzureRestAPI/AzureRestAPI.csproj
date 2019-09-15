@@ -15,6 +15,7 @@
     <ProjectReference Include="..\AzureDTO\AzureDTO.csproj" />
     <ProjectReference Include="..\AzureService\AzureService.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>
