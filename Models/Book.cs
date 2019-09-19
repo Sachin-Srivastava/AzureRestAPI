@@ -1,19 +1,22 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace AzureRestAPI.Models
 {
     public class Book
     {
-        [JsonProperty(PropertyName = "id")]
+        //[JsonProperty(PropertyName = "id")]     
+        [Required(ErrorMessage = "Id is required.")]
         public string Id { get; set; }
 
-        [JsonProperty(PropertyName = "name")]
+        //[JsonProperty(PropertyName = "name")]
+        [Required(ErrorMessage = "Name is required.")]
         public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "category")]
-        public string Description { get; set; }
+        //[JsonProperty(PropertyName = "category")]
+        public string Category { get; set; }
 
-        [JsonProperty(PropertyName = "price")]
-        public int Completed { get; set; }
+        //[JsonProperty(PropertyName = "price")]
+        public int Price { get; set; }
     }
 }

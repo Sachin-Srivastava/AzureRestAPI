@@ -7,6 +7,7 @@ using AzureRestAPI.AzureDTO;
 using AzureRestAPI.AzureService;
 using AzureRestAPI.Common;
 using AzureRestAPI.Models;
+using AzureRestAPI.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -17,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace AzureRestAPI
 {
@@ -58,11 +60,22 @@ namespace AzureRestAPI
                 .Configure<AppSettings>(_config)
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

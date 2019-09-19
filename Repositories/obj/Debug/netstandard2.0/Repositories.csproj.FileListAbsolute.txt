@@ -1,0 +1,11 @@
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\bin\Debug\netstandard2.0\Repositories.deps.json
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\bin\Debug\netstandard2.0\Repositories.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.AssemblyInfo.cs
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\bin\Debug\netstandard2.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\bin\Debug\netstandard2.0\Cosmos.CRTCompat.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\bin\Debug\netstandard2.0\Repositories.pdb
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.csprojAssemblyReference.cache
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\Repositories\obj\Debug\netstandard2.0\Repositories.pdb

@@ -46,3 +46,7 @@ C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\ob
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\obj\Debug\netcoreapp2.2\AzureRestAPI.pdb
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Cosmos.CRTCompat.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Models.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Repositories.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Models.pdb
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\AzureRestAPI\bin\Debug\netcoreapp2.2\Repositories.pdb

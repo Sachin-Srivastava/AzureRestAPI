@@ -23,3 +23,7 @@ C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\obj\De
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\bin\Debug\netcoreapp2.2\UnitTest.pdb
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\obj\Debug\netcoreapp2.2\UnitTest.dll
 C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\obj\Debug\netcoreapp2.2\UnitTest.pdb
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\bin\Debug\netcoreapp2.2\Models.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\bin\Debug\netcoreapp2.2\Repositories.dll
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\bin\Debug\netcoreapp2.2\Models.pdb
+C:\Users\ssrivastava\source\repos\Sachin-Srivastava\AzureRestAPI\UnitTest\bin\Debug\netcoreapp2.2\Repositories.pdb
