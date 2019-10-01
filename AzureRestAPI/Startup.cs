@@ -20,6 +20,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using AzureRestAPI.Repositories.Client;
 using Swashbuckle.AspNetCore.Swagger;
+using AutoMapper;
+using AzureRestAPI.Mapping;
 
 namespace AzureRestAPI
 {
@@ -43,6 +45,13 @@ namespace AzureRestAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            
             services
                 .AddHttpClient()
                 .AddSingleton<IAzureAuthentication, AzureAuthentication>()
@@ -60,6 +69,7 @@ namespace AzureRestAPI
                 .AddSingleton<IDocumentClient, DocumentClient>()
                 .AddSingleton<SharedResources>()                       
                 .Configure<AppSettings>(_config)
+                .AddSingleton(mapper)
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using AzureRestAPI.AzureDTO;
 using AzureRestAPI.AzureService;
+using AzureRestAPI.DTO;
 using AzureRestAPI.Models;
 using AzureRestAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -19,32 +21,38 @@ namespace AzureRestAPI.Controllers
         private readonly IDocumentDBRepository<Book> _documentDBRepository;
         private readonly ILogger _logger;
         private readonly LinkGenerator _linkGenerator;
+        private readonly IMapper _mapper;
 
         public BooksController(IDocumentDBRepository<Book> documentDBRepository, 
-            LinkGenerator linkGenerator, ILogger<BooksController> logger)
+            LinkGenerator linkGenerator, ILogger<BooksController> logger, IMapper mapper)
         {
             _documentDBRepository = documentDBRepository;
             _logger = logger;
             _linkGenerator = linkGenerator;
+            _mapper = mapper;
         }
 
         [HttpGet("entities")]
-        public async Task<ActionResult<List<Book>>> GetEntitiesAsync()
+        public async Task<ActionResult<List<BookDTO>>> GetEntitiesAsync()
         {
-            return (await _documentDBRepository.GetItemsAsync(d => true)).ToList();            
+            var listItem =  (await _documentDBRepository.GetItemsAsync(d => true)).ToList();
+            return _mapper.Map<List<BookDTO>>(listItem);
         }
 
         [HttpGet("entities/{id}")]
-        public async Task<ActionResult<Book>> GetEntityAsync(string id)
+        public async Task<ActionResult<BookDTO>> GetEntityAsync(string id)
         {
-            return await _documentDBRepository.GetItemAsync(id);            
+            var item = await _documentDBRepository.GetItemAsync(id);
+            return _mapper.Map<BookDTO>(item);
         }
 
         [HttpPost("entities")]        
-        public async Task<ActionResult<Book>> CreateAsync(Book item)
+        public async Task<ActionResult<Book>> CreateAsync(BookDTO item)
         {
-            var getLink = _linkGenerator.GetPathByAction("GetEntityAsync", "Books", new { Id = item.Id });
-            return Created(getLink, await _documentDBRepository.CreateItemAsync(item));
+            var itemModel = _mapper.Map<Book>(item);
+            var retModel = await _documentDBRepository.CreateItemAsync(itemModel);
+            var getLink = _linkGenerator.GetPathByAction("GetEntityAsync", "Books", new { Id = retModel.Id });
+            return Created(getLink, retModel);
         }
 
         [HttpPut("entities/{id}")]
