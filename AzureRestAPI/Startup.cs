@@ -18,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using AzureRestAPI.Repositories.Client;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace AzureRestAPI
@@ -51,8 +52,9 @@ namespace AzureRestAPI
                 .AddSingleton<ITableService, TableService>()
                 .AddSingleton<IDocumentDBRepository<Book>, DocumentDBRepository<Book>>(serviceProvider =>
                     {
-                        var documentClient = new DocumentClient(new Uri(Endpoint), Key);
-                        return new DocumentDBRepository<Book>(documentClient);
+                        IDocumentClient documentClient = new DocumentClient(new Uri(Endpoint), Key);
+                        ICosmosClient cosmosClient = new CosmosClient(documentClient);
+                        return new DocumentDBRepository<Book>(cosmosClient, documentClient);
                     }
                 )
                 .AddSingleton<IDocumentClient, DocumentClient>()

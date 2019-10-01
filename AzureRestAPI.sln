@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureService", "AzureServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{2696FD07-6BAF-41FC-AB3D-16A5C67673BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{6B6A34B0-3C84-4A7D-AB4F-2E6F4AFDFB96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{6B6A34B0-3C84-4A7D-AB4F-2E6F4AFDFB96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F43AEC78-C054-4947-9A7F-662AA28D5565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{F43AEC78-C054-4947-9A7F-662AA28D5565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{D230EF51-A1B1-4C8B-82F0-23BA18E06088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{D230EF51-A1B1-4C8B-82F0-23BA18E06088}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

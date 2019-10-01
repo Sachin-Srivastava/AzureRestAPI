@@ -44,10 +44,10 @@ namespace AzureRestAPI.Controllers
         public async Task<ActionResult<Book>> CreateAsync(Book item)
         {
             var getLink = _linkGenerator.GetPathByAction("GetEntityAsync", "Books", new { Id = item.Id });
-            return Created(getLink, (Book) (dynamic)await _documentDBRepository.CreateItemAsync(item));
+            return Created(getLink, await _documentDBRepository.CreateItemAsync(item));
         }
 
-        [HttpPut("entities")]
+        [HttpPut("entities/{id}")]
         public async Task<ActionResult<Book>> UpdateAsync(string id, Book item)
         {            
             var oldBook = await _documentDBRepository.UpdateItemAsync(id, item);

@@ -12,87 +12,60 @@ using Microsoft.Azure.Documents.Linq;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Collections.Generic;
+using AzureRestAPI.Repositories.Client;
 
 namespace UnitTest
 {
     public class TestDocumentDBRepository
     {
-        public interface IFakeDocumentQuery<T> : IDocumentQuery<T>, IOrderedQueryable<T>
-        {
-
-        }
 
         [Fact]
         public async Task DocumentDBRepositoryTest_GetItemAsync_ReturnsItem()
         {
             var mockDocumentClient = Substitute.For<IDocumentClient>();
+            var mockCosmosClient = Substitute.For<ICosmosClient>();
             mockDocumentClient.ReadDatabaseAsync(Arg.Any<string>())
                             .ReturnsNull();
-            mockDocumentClient.ReadDocumentAsync(Arg.Any<Uri>())
-                            .Returns(Task.FromResult(new ResourceResponse<Document>(new Document())));
-            var documentDBRepository = new DocumentDBRepository<Book>(mockDocumentClient);
+            mockCosmosClient.ReadDocumentAsync(Arg.Any<string>())
+                            .Returns(Task.FromResult(new Document()));
+            var documentDBRepository = new DocumentDBRepository<Book>(mockCosmosClient, mockDocumentClient);
             var document = await documentDBRepository.GetItemAsync("1");
 
             document.Should().NotBeNull();
         }
 
-        [Fact(Skip = "reason")]
+        [Fact]
         public async Task DocumentDBRepositoryTest_PostItemAsync_ReturnsItem()
         {
             var mockDocumentClient = Substitute.For<IDocumentClient>();
+            var mockCosmosClient = Substitute.For<ICosmosClient>();
             mockDocumentClient.ReadDatabaseAsync(Arg.Any<string>())
                             .ReturnsNull();
-            mockDocumentClient.CreateDocumentAsync(Arg.Any<Uri>(), Arg.Any<Document>())
-                            .Returns(Task.FromResult(new ResourceResponse<Document>(new Document())));
-            var documentDBRepository = new DocumentDBRepository<Book>(mockDocumentClient);
+            mockCosmosClient.CreateDocumentAsync(Arg.Any<Book>())
+                            .Returns(Task.FromResult(new Document()));
+            var documentDBRepository = new DocumentDBRepository<Book>(mockCosmosClient, mockDocumentClient);
             var document = await documentDBRepository.CreateItemAsync(new Book() { Name = "test"});
 
             document.Should().NotBeNull();
         }
 
-        [Fact(Skip = "reason")]
+        [Fact]
         public async Task DocumentDBRepositoryTest_GetItemsAsync_ReturnsItemList()
         {
             var mockDocumentClient = Substitute.For<IDocumentClient>();
-            //var mockQuery = Substitute.For<IDocumentQuery<Document>>();
-
-            //var mockOrderedQuery = Substitute.For<IOrderedQueryable<Book>>();
-            var mockQueryable = Substitute.For<IOrderedQueryable<Book>>();
-            var mockDocumentQuery = Substitute.For<IDocumentQuery<Book>, IQueryable<Book>>();
-
+            var mockCosmosClient = Substitute.For<ICosmosClient>();
             mockDocumentClient.ReadDatabaseAsync(Arg.Any<string>())
                             .ReturnsNull();
-            var emptyLst = new List<Book>()
-            {
-                new Book()
-                {
-                    Name = "this"
-                },
-                new Book()
-                {
-                    Name = "that"
-                }
-            };
-
-            //IOrderedQueryable<Book> queryable = emptyLst.AsQueryable().OrderBy(t => t.Name);
-
-            //mockDocumentQuery.Where(Arg.Any<Expression<Func<Book, bool>>>()).Returns(queryable);
+            var mockDocumentQuery = Substitute.For<IDocumentQuery<Book>>();
             mockDocumentQuery.HasMoreResults.Returns(true, false);
-            mockDocumentQuery.ExecuteNextAsync<Book>().Returns(new FeedResponse<Book>(emptyLst));
+            mockDocumentQuery.ExecuteNextAsync<Book>()
+                .Returns(Task.FromResult(new FeedResponse<Book>(new List<Book>())));
+            mockCosmosClient.CreateDocumentQuery<Book>(Arg.Any<Expression<Func<Book, bool>>>())
+                            .Returns(mockDocumentQuery);
+            var documentDBRepository = new DocumentDBRepository<Book>(mockCosmosClient, mockDocumentClient);
 
-            mockQueryable.AsDocumentQuery().Returns(mockDocumentQuery);
-            //mockOrderedQuery.Where<Book>(Arg.Any<Expression<Func<Book, bool>>>()).Returns(mockQueryable);
-            
-
-            //IFakeDocumentQuery<Book> lst = emptyLst.AsQueryable().OrderBy(x => x.Id);
-            //IOrderedQueryable<Book> books = new List<Book>();
-            //IFakeDocumentQuery<Book> lst = (IFakeDocumentQuery<Book>)emptyLst.AsQueryable();
-            //IFakeDocumentQuery<Book> fakeQuery = queryable;
-            mockDocumentClient.CreateDocumentQuery<Book>(Arg.Any<Uri>(), Arg.Any<FeedOptions>()).Returns(mockQueryable);
-            var documentDBRepository = new DocumentDBRepository<Book>(mockDocumentClient);
-            var document = await documentDBRepository.GetItemsAsync(d => true);
-
-            document.Should().NotBeNull();
+            var items = await documentDBRepository.GetItemsAsync(t => true);   
+            items.Should().NotBeNull();
         }
     }
 }

@@ -5,8 +5,7 @@ namespace AzureRestAPI.Models
 {
     public class Book
     {
-        //[JsonProperty(PropertyName = "id")]     
-        [Required(ErrorMessage = "Id is required.")]
+        //[JsonProperty(PropertyName = "id")]             
         public string Id { get; set; }
 
         //[JsonProperty(PropertyName = "name")]

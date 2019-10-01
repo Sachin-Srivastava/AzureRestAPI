@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using AzureRestAPI.Models;
+using AzureRestAPI.Repositories.Client;
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Linq;
@@ -14,11 +16,14 @@ namespace AzureRestAPI.Repositories
     {
         private readonly string DatabaseId = "BookStore";
         private readonly string CollectionId = "Book";
-        private readonly IDocumentClient _client;
+        //private readonly IDocumentClient _client;
+        private readonly ICosmosClient _client;
+        private readonly IDocumentClient _docClient;
 
-        public DocumentDBRepository(IDocumentClient client)
+        public DocumentDBRepository(ICosmosClient client, IDocumentClient docClient)
         {
             _client = client;
+            _docClient = docClient;
             CreateDatabaseIfNotExistsAsync().Wait();
             CreateCollectionIfNotExistsAsync().Wait();
         }
@@ -27,7 +32,7 @@ namespace AzureRestAPI.Repositories
         {
             try
             {
-                Document document = await _client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
+                Document document = await _client.ReadDocumentAsync(id);
                 return (T)(dynamic)document;
             }
             catch (DocumentClientException e)
@@ -45,11 +50,7 @@ namespace AzureRestAPI.Repositories
 
         public async Task<IEnumerable<T>> GetItemsAsync(Expression<Func<T, bool>> predicate)
         {
-            IDocumentQuery<T> query = _client.CreateDocumentQuery<T>(
-                UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId),
-                new FeedOptions { MaxItemCount = -1 })
-                .Where(predicate)
-                .AsDocumentQuery();
+            IDocumentQuery<T> query = _client.CreateDocumentQuery(predicate);
 
             List<T> results = new List<T>();
             while (query.HasMoreResults)
@@ -60,32 +61,32 @@ namespace AzureRestAPI.Repositories
             return results;
         }
 
-        public async Task<Document> CreateItemAsync(T item)
+        public async Task<T> CreateItemAsync(T item)
         {
-            return await _client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId), item);
+            return (T) (dynamic) await _client.CreateDocumentAsync(item);
         }
 
-        public async Task<Document> UpdateItemAsync(string id, T item)
+        public async Task<T> UpdateItemAsync(string id, T item)
         {
-            return await _client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id), item);
+            return (T)(dynamic) await _client.ReplaceDocumentAsync(id, item);
         }
 
         public async Task DeleteItemAsync(string id)
         {
-            await _client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, id));
+            await _client.DeleteDocumentAsync(id);
         }
 
         private async Task CreateDatabaseIfNotExistsAsync()
         {
             try
             {
-                await _client.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
+                await _docClient.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
             }
             catch (DocumentClientException e)
             {
                 if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    await _client.CreateDatabaseAsync(new Database { Id = DatabaseId });
+                    await _docClient.CreateDatabaseAsync(new Database { Id = DatabaseId });
                 }
                 else
                 {
@@ -98,13 +99,13 @@ namespace AzureRestAPI.Repositories
         {
             try
             {
-                await _client.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId));
+                await _docClient.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId));
             }
             catch (DocumentClientException e)
             {
                 if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    await _client.CreateDocumentCollectionAsync(
+                    await _docClient.CreateDocumentCollectionAsync(
                         UriFactory.CreateDatabaseUri(DatabaseId),
                         new DocumentCollection { Id = CollectionId },
                         new RequestOptions { OfferThroughput = 1000 });

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AzureRestAPI\AzureRestAPI.csproj" />
     <ProjectReference Include="..\AzureService\AzureService.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Repositories\Repositories.csproj" />
